@@ -23,7 +23,7 @@ export default class World
             console.log('resources ready')
             // this.test = new Test()
             this.stars = new Stars()
-            // this.spectra = new Spectra()
+            this.spectra = new Spectra()
             // this.sushi = new Sushi()
         
 
