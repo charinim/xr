@@ -1,6 +1,7 @@
 // saranya -- to work on sky??
 import * as THREE from 'three'
 import Experience from '../Experience.js'
+import Model from '../World/custom-models.js'
 
 export default class Environment
 {
@@ -10,6 +11,7 @@ export default class Environment
         this.scene = this.experience.scene
         this.resources = this.experience.resources
         this.debug = this.experience.debug
+        this.model()
         
         
 
@@ -21,6 +23,13 @@ export default class Environment
         this.ambientLight = new THREE.AmbientLight('#ffffff', 2.0)
         this.scene.add(this.ambientLight)
     }
+
+
+    model(){
+        this.object = new Model()
+        this.scene.add(this.object)
+    }
+
 
     // setSunLight()
     // {
