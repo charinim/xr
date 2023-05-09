@@ -123,10 +123,12 @@
 
 				handModels.left = [
 					handModelFactory.createHandModel( hand1, 'boxes' ),
+                    handModelFactory.createHandModel( hand1, 'spheres' ),
+					handModelFactory.createHandModel( hand1, 'mesh' )
 					
 				];
 
-				for ( let i = 0; i < 1; i ++ ) {
+				for ( let i = 0; i < 3; i ++ ) {
 
 					const model = handModels.left[ i ];
 					model.visible = i == 0;
